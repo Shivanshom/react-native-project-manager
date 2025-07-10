@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# 📱 React Native Project Manager App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple mobile app built with **React Native + Expo** to manage projects and tasks.  
+Users can create projects, add tasks, toggle their completion status, and track progress — all locally on their device.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Getting Started
 
-   ```bash
-   npm install
-   ```
+Follow these steps to run the app on your local machine.
 
-2. Start the app
+### ⚠️ Prerequisites
 
-   ```bash
-   npx expo start
-   ```
+Make sure the following versions are installed on your system:
 
-In the output, you'll find options to open the app in a
+- **Node.js**: ≥ 18.x
+- **npm**: ≥ 9.x
+- **Expo CLI**:  
+  Install globally if not already:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+  ```bash
+  npm install -g expo-cli
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+📦 Installation
+Clone the repository:
 
-## Learn more
+```bash
+git clone https://github.com/Shivanshom/react-native-project-manager.gitreact-native-project-manager.git
+cd react-native-project-manager
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Install dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
 
-## Join the community
+npm install
+```
+Start the Expo development server:
+```bash
+npm start
+```
 
-Join our community of developers creating universal apps.
+📱 Running the App
+Install the Expo Go app on your Android or iOS device.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Scan the QR code from the terminal .
+
+The app will launch on your phone.
+
+💡 You can also run the app using an Android or iOS simulator if set up on your system.
+
+🧠 Features
+Create and view multiple projects
+
+Track task progress within each project
+
+Add, delete, and toggle tasks
+
+Local data persistence using AsyncStorage
+
+Smart status updates (In Progress / Completed)
+
+Clean and responsive UI
+
+⚠️ Notes / Challenges
+While building the app, I encountered a challenging keyboard layout bug:
+
+When the keyboard was dismissed after adding a task, it left unexpected white space.
+
+I tried several layout solutions (e.g., KeyboardAvoidingView, KeyboardAwareScrollView, conditional styling).
+
+The final fix was to trigger a router.replace() on keyboardDidHide, which reliably resets the layout.
+
+Although not the most elegant solution, it resolved the issue consistently across devices.
+(This could be further improved in future iterations.)
+
+📂 Tech Stack
+React Native + Expo
+
+TypeScript
+
+expo-router (React Navigation)
+
+AsyncStorage (local storage)
+
+Functional components with hooks
