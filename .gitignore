@@ -1,8 +1,9 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
+package-lock.json
 # dependencies
 node_modules/
-
+.DS_Store
+.vscode/
 # Expo
 .expo/
 dist/
