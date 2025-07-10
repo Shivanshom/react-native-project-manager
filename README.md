@@ -20,7 +20,7 @@ Make sure the following versions are installed on your system:
 
   ```bash
   npm install -g expo-cli
-```
+   ```
 
 📦 Installation
 Clone the repository:
@@ -33,7 +33,6 @@ cd react-native-project-manager
 Install dependencies:
 
 ```bash
-
 npm install
 ```
 Start the Expo development server:
@@ -42,46 +41,46 @@ npm start
 ```
 
 📱 Running the App
-Install the Expo Go app on your Android or iOS device.
+- Install the Expo Go app on your Android or iOS device.
 
-Scan the QR code from the terminal .
+- Scan the QR code from the terminal .
 
-The app will launch on your phone.
+- The app will launch on your phone.
 
 💡 You can also run the app using an Android or iOS simulator if set up on your system.
 
 🧠 Features
-Create and view multiple projects
+- Create and view multiple projects
 
-Track task progress within each project
+- Track task progress within each project
 
-Add, delete, and toggle tasks
+- Add, delete, and toggle tasks
 
-Local data persistence using AsyncStorage
+- Local data persistence using AsyncStorage
 
-Smart status updates (In Progress / Completed)
+- Smart status updates (In Progress / Completed)
 
-Clean and responsive UI
+- Clean and responsive UI
 
 ⚠️ Notes / Challenges
-While building the app, I encountered a challenging keyboard layout bug:
+- While building the app, I encountered a challenging keyboard layout bug:
 
-When the keyboard was dismissed after adding a task, it left unexpected white space.
+- When the keyboard was dismissed after adding a task, it left unexpected white space.
 
-I tried several layout solutions (e.g., KeyboardAvoidingView, KeyboardAwareScrollView, conditional styling).
+- I tried several layout solutions (e.g., KeyboardAvoidingView, KeyboardAwareScrollView, conditional styling).
 
-The final fix was to trigger a router.replace() on keyboardDidHide, which reliably resets the layout.
+- The final fix was to trigger a router.replace() on keyboardDidHide, which reliably resets the layout.
 
 Although not the most elegant solution, it resolved the issue consistently across devices.
 (This could be further improved in future iterations.)
 
 📂 Tech Stack
-React Native + Expo
+- React Native + Expo
 
-TypeScript
+- TypeScript
 
-expo-router (React Navigation)
+- expo-router (React Navigation)
 
-AsyncStorage (local storage)
+- AsyncStorage (local storage)
 
-Functional components with hooks
+- Functional components with hooks
